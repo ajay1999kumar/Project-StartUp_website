@@ -11,7 +11,8 @@ export const homeObjOne={
     buttonLabel:'Get Started',
     imgStart:'',
     img:'images/svg-1.svg',
-    alt:'Credit Card'
+    alt:'Credit Card',
+    isForm:'true'
 
 };
 
@@ -28,7 +29,8 @@ export const homeObjTwo = {
     buttonLabel: 'Learn More',
     imgStart: '',
     img: 'images/svg-5.svg',
-    alt: 'Vault'
+    alt: 'Vault',
+    isForm:''
   };
   
   export const homeObjThree = {
@@ -47,7 +49,8 @@ export const homeObjTwo = {
     buttonLabel: 'Start Now',
     imgStart: 'start',
     img: 'images/svg-7.svg',
-    alt: 'Vault'
+    alt: 'Vault',
+    isForm:''
   };
   
   export const homeObjFour = {
@@ -63,5 +66,6 @@ export const homeObjTwo = {
     buttonLabel: 'Sign Up Now',
     imgStart: 'start',
     img: 'images/svg-8.svg',
-    alt: 'Vault'
+    alt: 'Vault',
+    isForm:''
   };
