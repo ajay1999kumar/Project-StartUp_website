@@ -9,7 +9,7 @@ import{
     ServicesfluidContainer,
     ServicesTopHeading
 } from './ServiceElements';
-import './Services.css';
+
 
 
 const Services = () => {
