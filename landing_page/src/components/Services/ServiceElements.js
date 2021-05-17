@@ -3,6 +3,8 @@ import styled from 'styled-components'
 export const ServicesContainer= styled.div`
 height:1000px;
 display:flex;
+margin-right:75px;
+
 
 flex-direction:column;
 justify-content:center;
@@ -10,7 +12,7 @@ align-items:center;
 background:#fff;
 
 @media screen and (max-width:768px){
-    height:1100px;
+    height:1000px;
 }
 
 @media screen and (max-width:480px){
@@ -18,7 +20,7 @@ background:#fff;
 }
 `
 export const ServicesfluidContainer= styled.div`
-width:80%;
+width:77%;
 display:flex;
 flex-direction:column;
 align-items:center;

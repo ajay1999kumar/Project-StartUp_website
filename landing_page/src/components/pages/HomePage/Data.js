@@ -69,3 +69,73 @@ export const homeObjTwo = {
     alt: 'Vault',
     isForm:''
   };
+
+  export const service1={
+    topHeading:'Why learn on Eduventure',
+    heading1:'We help you to achieve the best results...',
+    card:[
+      {
+        img:'images/svg-5.svg',
+        heading2:'The best teacher in the industry from IIT, NIT, having rich experience'
+      },
+      {
+        img:'images/svg-6.svg',
+        heading2:'Personalised content and adaptive teaching'
+      },
+      {
+        img:'images/svg-7.svg',
+        heading2:'Live and Interactive'
+      },
+      {
+        img:'images/svg-8.svg',
+        heading2:'Concept Building through interactive quizes and regular assessments'
+      },
+      {
+        img:'images/svg-3.svg',
+        heading2:'Most affordable int the market'
+      },
+      {
+        img:'images/svg-4.svg',
+        heading2:'Personal monitoring and career guidance'
+      }
+    ]
+  }
+
+  export const service2={
+    topHeading:'Benefits Of Eduventure',
+    heading1:'',
+    card:[
+      {
+        img:'images/svg-5.svg',
+        heading2:'Class from Program by Best Teaches'
+      },
+      {
+        img:'images/svg-6.svg',
+        heading2:'Inclined with latest syllabus'
+      },
+      {
+        img:'images/svg-7.svg',
+        heading2:'Flexible timings and batch schedule'
+      },
+      {
+        img:'images/svg-8.svg',
+        heading2:'1-1 Guidance and Monitoring'
+      },
+      {
+        img:'images/svg-3.svg',
+        heading2:'Personalised extra class and Rewarded lectures'
+      },
+      {
+        img:'images/svg-4.svg',
+        heading2:'The best course at the most affordable rate'
+      },
+      {
+        img:'images/svg-6.svg',
+        heading2:'Concept Buidling with updated study materials and handouts'
+      },
+      {
+        img:'images/svg-3.svg',
+        heading2:'Subject with assessments and performance evaluation'
+      }
+    ]
+  }
