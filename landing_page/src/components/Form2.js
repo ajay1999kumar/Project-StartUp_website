@@ -58,7 +58,7 @@ export class Form2 extends Component {
         return (
             <div className="formStyle2">
                 <form onSubmit={this.handleSubmit}>
-                    <legend>Book multiple free demo classes !!</legend>
+                    <legend>Book multiple free demo classes</legend>
                     <div>
                        
                         <input className="form2-inputs" type="text"  placeholder="Enter Name" value={this.state.studentName} onChange={this.handleStudentNameChange}/>

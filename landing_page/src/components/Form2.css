@@ -1,11 +1,12 @@
 .formStyle2{
-    width: 450px;
-    
+    width: 400px;
+    height: 600px;
     padding: 10px 50px 10px 10px ;
     
     background: #f4f7f8;
     border-radius: 8px;
     margin-left: 20px;
+    box-shadow: 10px 10px 5px  rgb(122, 117, 117);
     
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -13,7 +14,7 @@
 
 
 .formStyle2 legend{
-    font-size: 1.4rem;
+    font-size: 2.1rem;
     
     margin:5px 0 20px 20px;
     color: rgba(6,105, 37, 0.7);
@@ -90,7 +91,7 @@
     display: block;
     padding: 19px 39px 18px 39px;
     color: #FFF;
-    margin: 0 0 0 20px;
+    margin: 50px 0 0 20px;
     background: cornflowerblue;
     font-size: 18px;
     text-align: center;

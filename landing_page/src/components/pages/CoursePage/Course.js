@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutGate from '../../AboutGate';
 import CourseBranding from '../../CourseBranding';
 import { SpecificationTable } from '../../CourseSpecificationTable/SpecificationTable'
 import FeeTable from '../../FeeTable/FeeTable'
@@ -10,6 +11,7 @@ import {service2} from '../HomePage/Data'
     return (
         <div>
             <CourseBranding/>
+            <AboutGate/>
             <GatePrepSection/>
             <Services {...service2}/>
             <SpecificationTable/>

@@ -1,15 +1,16 @@
 import React from 'react';
 import './CourseBranding.css';
 import Form2 from './Form2';
+import NotificationBar from './NotificationBar';
 
 export default function CourseBranding() {
     return (
         <div>
         <div className="brand-container">
             <div className="brand-wrapper">
-                    <div className="brand-elements"><Form2/></div>
+                    <div className="brand-elements"><NotificationBar/></div>
                     
-                    <div className="brand-center " >
+                    <div className="brand-center  " >
                        
                         <div id="myCarousel" class="carousel slide" data-ride="carousel">
                         
