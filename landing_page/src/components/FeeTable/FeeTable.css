@@ -50,3 +50,35 @@
     color: red;
     font-weight: 550;
 }
+
+.courseName{
+   min-width: 5em;
+   padding: 1.2rem 1rem 1.2rem 1rem;
+   font-size: 2rem;
+   font-weight: 700;
+   
+
+   
+}
+
+.dark-btn{
+    background: rgb(16, 16, 65);
+    color: white;
+}
+
+.light-btn{
+    background: rgb(176, 176, 179);
+    color: black;
+}
+
+.courseWrapper{
+    display: grid;
+    height: 100px;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    padding: 10px;
+      
+  
+
+}

@@ -5,14 +5,32 @@ import {BiBookReader} from 'react-icons/bi';
 import{Button} from './Button';
 import './Navbar.css';
 import{IconContext} from 'react-icons/lib';
+import Dropdown from './Dropdown';
 
 
 function Navbar() {
     const[ click, setClick]=useState(false);
     const[button,setButton]=useState(true);
+    const[dropdown,setDropdown]=useState(false);
 
     const handleClick=()=>setClick(!click);
     const closeMobileMenu=()=>setClick(false);
+
+    const onMouseEnter=()=>{
+        if(window.innerWidth < 960){
+            setDropdown(true);
+        }else{
+            setDropdown(true);
+        }
+    }
+
+    const onMouseLeave=()=>{
+        if(window.innerWidth < 960){
+            setDropdown(false);
+        }else{
+            setDropdown(false);
+        }
+    }
 
     const showButton=()=>{
         if(window.innerWidth<=960){
@@ -48,10 +66,14 @@ function Navbar() {
                                     About US
                                 </Link>
                             </li>
-                            <li className="nav-item">
+                            <li className="nav-item"
+                            onMouseEnter={onMouseEnter}
+                            onMouseLeave={onMouseLeave}
+                            >
                                 <Link to='/courses' className="nav-links" onClick={closeMobileMenu}>
-                                    Courses
+                                    Courses <i className='fas fa-caret-down'/>
                                 </Link>
+                                {dropdown && <Dropdown/>}
                             </li>
                             <li className="nav-item">
                                 <Link to='/materials' className="nav-links" onClick={closeMobileMenu}>
@@ -77,7 +99,7 @@ function Navbar() {
                                 {button?(
                                     <Link to='/sign-up' className="btn-link">
                                         <Button buttonStyle='btn--outline'>
-                                            Siign Up
+                                            Sign Up
 
                                         </Button>
 
@@ -85,7 +107,7 @@ function Navbar() {
                                 ) : (
                                     <Link to='/sign-up' className="btn-link" onClick={closeMobileMenu}>
                                         <Button buttonStyle='btn--mobile'>
-                                            Slign Up
+                                            Sign Up
 
                                         </Button>
 

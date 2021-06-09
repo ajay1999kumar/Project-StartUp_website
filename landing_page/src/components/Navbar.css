@@ -31,7 +31,8 @@
     justify-self: start;
     cursor: pointer;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 2.5rem;
+     margin-right: auto;
     display:flex;
     align-items: center;
    
@@ -43,7 +44,7 @@
 }
 
 .menu-item{
-    display: none;
+    display: flex;
 }
 
 .nav-menu{
@@ -63,6 +64,9 @@
 
 .nav-item:hover{
     border-bottom: 2px solid #f00946;
+  
+
+    transition: all 0.2s ease;
 }
 
 .nav-links{
@@ -72,6 +76,7 @@
     text-decoration: none;
     padding: 0.5rem 1rem;
     height: 100%;
+    font-size: 1.5rem;
 }
 
 .fa-bars{
@@ -133,7 +138,7 @@
 .navbar-logo{
     
     position: absolute;
-    top: 0;
+    top: 10px;
     left: 0;
     transform: translate(25%,50%);
 }

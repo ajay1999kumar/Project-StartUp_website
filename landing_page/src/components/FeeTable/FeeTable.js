@@ -1,9 +1,63 @@
-import React from 'react'
+import React,{useState} from 'react'
 import  './FeeTable.css'
 function FeeTable() {
+
+    const [btn1,setBtn1]=useState(true);
+    const [btn2,setBtn2]=useState(false);
+    const [btn3,setBtn3]=useState(false);
+    const [btn4,setBtn4]=useState(false);
+
+    const handleSetBtn1=()=>{
+       setBtn1(true);
+       setBtn2(false);
+        setBtn3(false);
+       setBtn4(false);
+    }
+    const handleSetBtn2=()=>{
+        setBtn1(false);
+        setBtn2(true);
+         setBtn3(false);
+        setBtn4(false);
+    }
+    const handleSetBtn3=()=>{
+        setBtn1(false);
+        setBtn2(false);
+         setBtn3(true);
+        setBtn4(false);
+    }
+    const handleSetBtn4=()=>{
+        setBtn1(false);
+       setBtn2(false);
+        setBtn3(false);
+       setBtn4(true);
+    }
+
     return (
+       
         <div className="container-table">
             <h1>Fee Structure: </h1>
+
+            <div className ="courseWrapper">
+
+                <button onClick={handleSetBtn1}
+                className={btn1?'dark-btn courseName':'light-btn courseName'}
+                >CE</button>
+
+
+                <button onClick={handleSetBtn2}
+                className={btn2?'dark-btn courseName':'light-btn courseName'}
+               >ME</button>
+
+                <button onClick={handleSetBtn3}
+                className={btn3?'dark-btn courseName':'light-btn courseName'}
+                >EE</button>
+
+                <button onClick={handleSetBtn4}
+                className={btn4?'dark-btn courseName':'light-btn courseName'}
+                >E & T</button>
+
+            </div>
+            
             <table className="fee-table">
             <tr>
                         <th> Course</th>
